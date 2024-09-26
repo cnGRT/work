@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 使body高度充满视口 */
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            animation: myani 2s ease-in-out infinite;
+            position: relative; /* 为了确保变换不会影响其他元素布局 */
+        }
+        p{
+            font-size: 40px;
+            font-weight: 900;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div:hover {
+            animation-name: hoverAni; /* 鼠标悬停时使用不同的动画 */
+        }
+
+        @keyframes myani {
+            0%{
+                transform: scale(1) rotate(0deg);
+                background-color: red;
+            }
+            50% {
+                transform: scale( 2) rotate( 45deg);
+                background-color: rgb(18, 223, 223);
+            }
+            100%{transform: scale( 1) rotate( 0deg);
+                background-color: white;}
+        }
+
+        @keyframes hoverAni { /* 鼠标悬停时的动画 */
+            0%{
+                background-color: rgb(195, 22, 218);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>grant</p>
+</body>
+</html>
