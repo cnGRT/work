@@ -12,11 +12,38 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            flex-direction: column;
         }
 
         /* 设置 h1 和 p 居中 */
         h1, p {
             text-align: center;
+        }
+
+        /* 设置链接的颜色 */
+        .link-blue {
+            color: blue;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .link-red {
+            color: red;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .link-green {
+            color: green;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        /* 设置链接的悬停效果 */
+        .link-blue:hover,
+        .link-red:hover,
+        .link-green:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -24,6 +51,16 @@
     <div>
         <h1>欢迎来到我的网站</h1>
         <p>这是一个简单的 HTML 页面。</p>
+        <div style="display: flex; justify-content: center;">
+            <!-- 第一个链接 -->
+            <a class="link-blue" href="https://github.com/cnGRT/work/blob/main/4.html">link</a>
+
+            <!-- 第二个链接 -->
+            <a class="link-red" href="https://github.com/cnGRT/work/blob/main/pie.html">link</a>
+
+            <!-- 第三个链接 -->
+            <a class="link-green" href="https://github.com/cnGRT/work/blob/main/盒子.html">link</a>
+        </div>
     </div>
 </body>
 </html>
