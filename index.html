@@ -13,11 +13,14 @@
             height: 100vh;
             margin: 0;
             flex-direction: column;
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
         }
 
         /* 设置 h1 和 p 居中 */
         h1, p {
             text-align: center;
+            margin: 20px 0;
         }
 
         /* 设置链接的颜色 */
@@ -25,18 +28,30 @@
             color: blue;
             text-decoration: none;
             margin: 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            font-size: 18px;
         }
 
         .link-red {
             color: red;
             text-decoration: none;
             margin: 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            font-size: 18px;
         }
 
         .link-green {
             color: green;
             text-decoration: none;
             margin: 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            font-size: 18px;
         }
 
         /* 设置链接的悬停效果 */
@@ -44,22 +59,41 @@
         .link-red:hover,
         .link-green:hover {
             text-decoration: underline;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* 图片样式 */
+        img {
+            max-width: 10%;
+            height: auto;
+            margin-bottom: 2px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+
+        /* 文本样式 */
+        p {
+            font-size: 20px; /* 增大字体大小 */
+            line-height: 1.8; /* 增加行间距 */
+            margin: 30px 0; /* 增加上下边距 */
         }
     </style>
 </head>
 <body>
     <div>
         <h1>欢迎来到我的网站</h1>
-        <p>这是一个简单的 HTML 页面。</p>
+        <p>It's a neatly designed page designed to present visitors with a series of basic web page elements. At the top of the page is a catchy headline, and below is a beautiful image that grabs attention and conveys a visual message. This is followed by an interactive button that users click on to receive a friendly pop-up message, adding to the interactivity. Finally, there is a short text description at the bottom of the page that provides additional information</p>
+        <img src="https://github.com/cnGRT/work/blob/main/Citrus%20Peel.jpg?raw=true" alt="您的图片">
         <div style="display: flex; justify-content: center;">
             <!-- 第一个链接 -->
-            <a class="link-blue" href="https://cngrt.github.io/work/2">link</a>
+            <a class="link-blue" href="https://cngrt.github.io/work/2">link 1</a>
 
             <!-- 第二个链接 -->
-            <a class="link-red" href="https://cngrt.github.io/work/pie">link</a>
+            <a class="link-red" href="https://cngrt.github.io/work/pie">link 2</a>
 
             <!-- 第三个链接 -->
-            <a class="link-green" href="https://cngrt.github.io/work/盒子">link</a>
+            <a class="link-green" href="https://cngrt.github.io/work/盒子">link 3</a>
         </div>
     </div>
 </body>
